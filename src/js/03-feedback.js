@@ -18,8 +18,7 @@ const saveFormValue = (e) => {
 
 const formSubmit = e =>{
     e.preventDefault();
-    console.log(`mail: ${mail.value}`);
-    console.log(`message: ${message.value}`);
+    console.log({mail: mail.value,message: message.value});
     mail.value='';
     message.value='';
     localStorage.removeItem('feedback-form-state');
